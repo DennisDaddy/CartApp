@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   devise_for :users
   get '/cart' => 'cart#index'
+  get '/cart/clear' => 'cart#clearCart'
 
   resources :products
 	root 'page#home'
